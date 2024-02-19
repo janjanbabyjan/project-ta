@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.log')
 
 @section('content')
 <!-- Login 10 - Bootstrap Brain Component -->
