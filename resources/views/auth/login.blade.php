@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<!-- Login 10 - Bootstrap Brain Component -->
 <section class="bg-light py-3 py-md-5 py-l-8">
     <div class="container">
         <div class="row justify-content-center">
@@ -18,7 +19,7 @@
                                     aria-label="Close"></button>
                             </div>
                             @endif
-
+                            
                             <div class="image-logo" style="width: 100%; text-align: center;">
                                 <img src="https://img2.pic.in.th/pic/Computing_KKU.png" alt="Computing_KKU.png"
                                     style="width: 80%;" />
@@ -85,41 +86,16 @@
                                             Password?') }}</a>
                                         @endif
 
-
-                                            <div class="row mb-0">
-                                                <div class="col-md-8 offset-md-4">
-                                                    <button type="submit" class="btn btn-primary">
-                                                        {{ __('Login') }}
-                                                    </button>
-
-                                                    @if (Route::has('password.request'))
-                                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                                        {{ __('Forgot Your Password?') }}
-                                                    </a>
-                                                    @endif
-
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
                     </div>
-                    <div class="d-flex gap-2 gap-md-4 flex-column flex-md-row justify-content-md-center mt-4">
-
-
-                    </div>
+                </div>
+                <div class="d-flex gap-2 gap-md-4 flex-column flex-md-row justify-content-md-center mt-4">
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-</body>
-
-</html>
+    </div>
+</section>
+@endsection
